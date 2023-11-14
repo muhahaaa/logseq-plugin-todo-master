@@ -48,6 +48,56 @@
 
 * Revert "feat: always calculate block id based on renderer position" ([447132a](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/447132a5dc21bad053ec8b4eae94f79e3df0f17c))
 
+# 1.0.0 (2023-11-14)
+
+
+### Bug Fixes
+
+* add bg color for todo/later ([3c908c3](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/3c908c3ad6846a41ed985d4365d102656c771d84)), closes [#16](https://github.com/muhahaaa/logseq-plugin-todo-master/issues/16)
+* base64 unicode issue ([80dd15a](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/80dd15a11c27308acd512d3fa927d405504ccab6))
+* compatibility issue with 0.5.2 ([5dc7787](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/5dc7787588d77ab4e697417e70cb398373cd06b8))
+* debug log ([3f35ac0](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/3f35ac0a779790896685e7d478a70c3be15a5424))
+* do not count current block ([627d9e5](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/627d9e5d2c13bc331c73c3ecf0b8f13aa157a251))
+* downgrade @logseq/libs ([dbfc860](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/dbfc860c38a190969dc082ca138efa46c9e1b8f5))
+* draft version ([462b033](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/462b033b8b3f317e19aee2dce459e3127c3af6ec))
+* embed reference block ([4d5b315](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/4d5b315aa0b792e399fdca5746db39512844bb3e))
+* hide progress bar if uuid is not found ([6fc759d](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/6fc759dd4b3ef8a7324bd8b0a84d46746109dbc1))
+* multiple progress bars per page ([e991edd](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/e991edd4fa3b0126ab72d8ed07aed79f9d05b407))
+* optimize logic ([a22af64](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/a22af645af1c4e01ad2593987811a0dbbbc07423))
+* optimize rendering logic with rxjs ([4b1cec1](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/4b1cec1234947d59d7115bab852f7288c040c75f))
+* package logo ([72011eb](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/72011ebf318ddd5447c4d911106fc5bacf104da6))
+* progress bar blinking issue ([4f0ac46](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/4f0ac46590ccb40685b54f158df31de09fbb8782))
+* query with inputs ([949e04a](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/949e04ab770342f3e8538191ca029b7454082731))
+* refresh todo every 5s ([74b2228](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/74b222854d96677d72592957efe17b683fd61e24))
+* remove decimals ([0148b2d](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/0148b2d90d4dfddcd13fa339904c9e42619b621a))
+* remove old unused code ([cc26bc2](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/cc26bc2ac43ff40417f04cadadf60c1816738576))
+* revert libs downgrade ([ff0385f](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/ff0385fefd794394e27c1dc374b915e1c89d22d5))
+* style and event unlistener logic ([65cac97](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/65cac9784ba2b1aacba6e666cd9c2d02b83c8a72))
+* style fixes ([ee1da93](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/ee1da93b344b1b2d6b772465aec8fc8a6d08cb6f))
+* todo master label width issue ([cc19761](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/cc19761c4e4d6e3b92d4d8b1a773df7886c0eef2))
+* ts types error ([5ea5992](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/5ea59920155396d5cc993c3bbb9aef67f97c8cbb))
+* update issue for page mode ([3cd34e7](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/3cd34e780a799f1f1a4721baa6c744da324c27d1))
+* use regex match all ref block content ([8ebf162](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/8ebf1621e75d163e7668ed5f11af3addb8883824))
+* various query errors ([f14ee04](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/f14ee04da489d903258699fe218767cbee1b5314))
+* word wrap ([aaf3a65](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/aaf3a6594864fb86ff00a2b4da23ee684545d3c9))
+
+
+### Features
+
+* add page mode ([26b8e9a](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/26b8e9a9eb5f3c92ce09529d0de15f420a026bd8))
+* add support for queries ([5a273ff](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/5a273ff850de1096b7688be9276a4e7161c1658c))
+* allow the user to use {{renderer :todomaster}} without given the encoded ID ([aafa4a6](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/aafa4a6384d072987656dd6adad1340023691e6e))
+* do not use uuid for block-ref ([809df1c](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/809df1c6767bcf4a49c6cf90caa0352a7f9791e8)), closes [#9](https://github.com/muhahaaa/logseq-plugin-todo-master/issues/9)
+* show TODO counts when hovering ([bac3451](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/bac3451cf1e593ef14b9c5f5cda090a1a13a86d8))
+* support block reference ([9eb7ce5](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/9eb7ce55ae894443cc73eeb5f58bf0283465fc5e))
+* track page todos implicitly ([2e29da5](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/2e29da5312ae457c1a67b9f803876fb2906df086))
+* use onMacroRendererSlotted instead ([662a857](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/662a857c30eaa92532573dde20f2a6163764b4c7))
+
+
+### Reverts
+
+* Revert "feat: always calculate block id based on renderer position" ([447132a](https://github.com/muhahaaa/logseq-plugin-todo-master/commit/447132a5dc21bad053ec8b4eae94f79e3df0f17c))
+
 ## [1.10.3](https://github.com/pengx17/logseq-plugin-todo-master/compare/v1.10.2...v1.10.3) (2022-08-31)
 
 
