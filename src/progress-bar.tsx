@@ -38,16 +38,9 @@ export function ProgressBar({
   }
   const { done, now, later } = status;
   const total = done + now + later;
-  if (total <= 0) {
-    return (
-      <div className="todo-master-progress-bar">
-        No progress to track found.
-      </div>
-    )
-  }
   const percentage = total === 0 ? `0` : ((done / total) * 100).toFixed(0);
   const shortText = `${percentage}%`;
-  const fullText = `${mode}:${done}/${total}`;
+  const fullText = total === 0 ? `No progress to track.` : `${mode}:${done}/${total}`;
   const [width] = getTextLabelSize(fullText);
   return (
     <div className="todo-master-progress-bar">
